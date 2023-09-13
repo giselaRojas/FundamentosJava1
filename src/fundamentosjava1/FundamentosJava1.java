@@ -45,6 +45,49 @@ public class FundamentosJava1 {
         else {
             System.out.println("Es menor de 18");
         }
+            //sout + TAB
+    System.out.println("BUCLE FOR");
+    // El bucle FOR se utiliza cuando sabemos de antemano cuantas 
+    // veces queremos que se jecute un bloque de código
+    /*
+    for (inicializacion; condición ; actualización )
+    BLOQUE DE CODIGO
+    */
+    for (int i= 0; i < 10; i++){
+        System.out.println("Número: " + i);
     }
-    
+        System.out.println("---------------------");
+    //Crear un bucle que inicie en 1 y me muestre hasta el número 5
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Número: " + i);
+        }
+        //Estudiar estructura de un arreglo en JAVA, y como acceder a sus posiciones 
+        System.out.println("---------------------");
+        int [] numeros ={1,2,3,4,5};
+        for (int j = 0; j <numeros.length; j++){
+            System.out.println("Elemento " + j +": "+ numeros[j]);
+        }
+        System.out.println("-------------------");
+        System.out.println("BUCLE WHILE");
+        /*
+        eL BUCLE WHILE SE UTILIZA CUANDO NO SABEMOS DE ANTEMANO CUANTAS VECES
+        DEBE EJECUTARSE EK BLOQUE DE CODIGO; DEPENDE DE UNA CONDICION PARA DETENERSE
+        */
+        int contador = 0;
+        /*
+        while (contador <=5) {
+            System.out.println("Número: " + contador);
+            contador ++;
+        }
+        */
+                
+        // recorrer arreglo número con while
+        while (contador < numeros.length) {
+            System.out.println("Numero: "+ contador + ": " + numeros[contador]);
+            contador++;
+        }
+        
+        
+    }
+
 }
